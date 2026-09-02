@@ -19,7 +19,7 @@ const projects: Project[] = [
     category: 'NLP / RECRUITMENT AI',
     description:
       'End-to-end resume screening platform that parses resumes, matches candidates against job descriptions, ranks applicants, validates ATS readiness, and generates role-specific interview questions. Tested and demoed across 200+ real resumes during college placement drives.',
-    githubUrl: 'https://github.com/TiKkU12345/Resume-Ai-System',
+    githubUrl: 'https://tikku12345.github.io/Resume-landing-Page-/',
     tech: [
       'Python',
       'Streamlit',
@@ -40,7 +40,7 @@ const projects: Project[] = [
     category: 'GENERATIVE AI / RAG',
     description:
       'Retrieval-Augmented Generation system for document question answering using PDF ingestion, sentence-transformer embeddings, FAISS semantic search, and Groq LLaMA-3.3-70B generation. Deployed live with sub-second average query response.',
-    githubUrl: 'https://github.com/TiKkU12345/DocMind-API',
+    githubUrl: 'https://tikku12345.github.io/DocMind-API/',
     tech: [
       'Python',
       'FastAPI',
