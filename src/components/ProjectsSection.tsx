@@ -15,90 +15,109 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    title: 'DocMind',
-    category: 'AI / RAG DOCUMENT Q&A PIPELINE',
+    title: 'AI Resume Shortlisting System',
+    category: 'NLP / RECRUITMENT AI',
     description:
-      'Fully deployed Retrieval-Augmented Generation pipeline for document question-answering. Built from scratch with FAISS vector search, sentence-transformer embeddings, and Groq LLaMA-3.3-70B for generation — averaging sub-second query response.',
-    githubUrl: 'https://github.com/TiKkU12345/DocMind-API',
+      'End-to-end resume screening platform that parses resumes, matches candidates against job descriptions, ranks applicants, validates ATS readiness, and generates role-specific interview questions. Tested and demoed across 200+ real resumes during college placement drives.',
+    githubUrl: 'https://github.com/TiKkU12345/Resume-Ai-System',
     tech: [
-      'FastAPI',
-      'FAISS',
-      'Sentence Transformers',
-      'Groq LLaMA-3.3-70B',
-      'Streamlit',
-      'Railway',
       'Python',
+      'Streamlit',
+      'Sentence Transformers',
+      'spaCy',
+      'Supabase',
+      'Claude API',
     ],
     metrics: [
-      { label: 'RESPONSE TIME', value: '~0.5s avg' },
-      { label: 'DEPLOYMENT', value: 'Railway + Streamlit Cloud' },
-      { label: 'TESTED ON', value: 'CUAD Legal Contracts' },
+      { label: 'SCALE', value: '200+ RESUMES' },
+      { label: 'ROUTING', value: 'CONFIDENCE-BASED AUTO-DECISION' },
+      { label: 'MATCHING', value: 'SEMANTIC + SCORE' },
     ],
   },
   {
     number: '02',
-    title: 'AI Resume Shortlisting System',
-    category: 'AI / NLP HIRING PLATFORM',
+    title: 'DocMind — RAG Document Assistant',
+    category: 'GENERATIVE AI / RAG',
     description:
-      'End-to-end resume screening system combining Claude API semantic reasoning with TF-IDF/spaCy keyword scoring. A rule-based routing layer auto-shortlists, flags, or rejects candidates by confidence threshold and auto-generates interview questions.',
-    githubUrl: 'https://github.com/TiKkU12345/Resume-Ai-System',
+      'Retrieval-Augmented Generation system for document question answering using PDF ingestion, sentence-transformer embeddings, FAISS semantic search, and Groq LLaMA-3.3-70B generation. Deployed live with sub-second average query response.',
+    githubUrl: 'https://github.com/TiKkU12345/DocMind-API',
     tech: [
-      'Sentence Transformers',
-      'Claude API',
+      'Python',
       'FastAPI',
-      'Supabase',
-      'spaCy',
-      'TF-IDF',
-      'Plotly',
+      'FAISS',
+      'Sentence Transformers',
+      'Groq LLaMA',
+      'Streamlit',
     ],
     metrics: [
-      { label: 'RESUMES PROCESSED', value: '200+' },
-      { label: 'AUTO-ROUTING', value: 'Confidence-based' },
-      { label: 'LIVE AT', value: 'aisystemusingnlp.streamlit.app' },
+      { label: 'ARCHITECTURE', value: 'RAG PIPELINE' },
+      { label: 'RETRIEVAL', value: 'FAISS VECTOR SEARCH' },
+      { label: 'RESPONSE', value: '~0.5s AVG' },
     ],
   },
   {
     number: '03',
-    title: 'EMI Risk Assessment Platform',
-    category: 'MACHINE LEARNING / FINTECH RISK',
+    title: 'CUAD Contract Analysis',
+    category: 'LEGAL NLP / DOCUMENT AI',
     description:
-      'Financial risk platform predicting EMI eligibility (3-class) and max affordable monthly EMI (regression) on a 400K+ row applicant dataset. XGBoost pipeline with full MLflow experiment tracking, deployed as a multi-page Streamlit app with CRUD.',
-    githubUrl: 'https://github.com/TiKkU12345',
+      'NLP pipeline for extracting and summarizing key clauses from legal contracts, with a FAISS-powered semantic search layer for fast clause lookup. Built as a take-home assessment and validated across 50 CUAD contracts.',
+    githubUrl: 'https://github.com/TiKkU12345/cuad-contract-analysis-pipeline',
     tech: [
-      'XGBoost',
-      'MLflow',
-      'Streamlit',
       'Python',
-      'Scikit-learn',
-      'CI/CD',
-    ],
-    metrics: [
-      { label: 'CLASSIFICATION F1', value: '0.835' },
-      { label: 'REGRESSION R²', value: '0.993' },
-      { label: 'DATASET SIZE', value: '400K+ rows' },
-    ],
-  },
-  {
-    number: '04',
-    title: 'CUAD Contract Analysis Pipeline',
-    category: 'AI / LEGAL-TECH NLP',
-    description:
-      'Legal contract processing pipeline built for a take-home assessment — automated clause extraction and summarization across 50 real contracts, with a FAISS-powered semantic search layer for fast clause lookup.',
-    githubUrl: 'https://github.com/TiKkU12345',
-    tech: [
       'FAISS',
       'NLP',
-      'Python',
       'Clause Extraction',
       'Semantic Search',
     ],
     metrics: [
-      { label: 'CONTRACTS PROCESSED', value: '50/50' },
-      { label: 'BONUS FEATURE', value: 'FAISS Semantic Search' },
-      { label: 'STATUS', value: 'Submitted & Deployed' },
+      { label: 'DATASET', value: 'CUAD' },
+      { label: 'VALIDATION', value: '50 / 50 CONTRACTS' },
+      { label: 'TASK', value: 'CLAUSE EXTRACTION' },
+    ],
+  },
+  {
+    number: '04',
+    title: 'Predictive Maintenance RUL Estimator',
+    category: 'TIME SERIES / PREDICTIVE ML',
+    description:
+      'Remaining Useful Life prediction system trained on NASA CMAPSS turbofan sensor data. Compared PyTorch LSTM and XGBoost models, deployed as a live interactive dashboard for monitoring predictions.',
+    githubUrl: 'https://tikku12345.github.io/Predictive-maintenance-rul/',
+    tech: [
+      'Python',
+      'PyTorch',
+      'LSTM',
+      'XGBoost',
+      'Streamlit',
+      'NASA CMAPSS',
+    ],
+    metrics: [
+      { label: 'MODEL', value: 'LSTM + XGBOOST' },
+      { label: 'LSTM RMSE', value: '~14.47 CYCLES' },
+      { label: 'DATA', value: 'NASA CMAPSS FD001' },
+    ],
+  },
+  {
+    number: '05',
+    title: 'ChainScope AI',
+    category: 'LLM / SMART CONTRACT ANALYSIS — HACKATHON BUILD',
+    description:
+      'LLM-powered smart contract auditor built end-to-end for the Mantle Turing Test Hackathon 2026, with on-chain audit hash storage. Live demo currently down due to a Groq API config issue — functional prototype, fix in progress.',
+    githubUrl: 'https://github.com/TiKkU12345',
+    tech: [
+      'Python',
+      'FastAPI',
+      'React',
+      'Groq API',
+      'Llama 3.3 70B',
+    ],
+    metrics: [
+      { label: 'DOMAIN', value: 'SMART CONTRACTS' },
+      { label: 'ENGINE', value: 'LLM ANALYSIS' },
+      { label: 'STATUS', value: 'HACKATHON BUILD, DEMO FIX IN PROGRESS' },
     ],
   },
 ];
+
 export const ProjectsSection: React.FC = () => {
   return (
     <section
@@ -152,7 +171,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Scroll down to unfold the system architecture cards. Each platform was built to solve complex operational challenges.
+            Scroll down to unfold the system architecture cards. Each system is built around a concrete AI/ML problem, measurable output, and deployable workflow.
           </p>
         </motion.div>
 
@@ -253,7 +272,7 @@ export const ProjectsSection: React.FC = () => {
                       ))}
                     </div>
 
-                    <a
+                    
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
