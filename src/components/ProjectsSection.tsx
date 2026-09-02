@@ -176,7 +176,6 @@ export const ProjectsSection: React.FC = () => {
         </motion.div>
 
         {/* React Bits Stacking Deck */}
-        {/* React Bits Stacking Deck */}
 <ScrollStack
   itemDistance={20}
   itemScale={0.035}
@@ -272,7 +271,7 @@ export const ProjectsSection: React.FC = () => {
                       ))}
                     </div>
 
-                    
+                    <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
