@@ -66,15 +66,14 @@ export const HeroSection: React.FC = () => {
 
       {/* ================= 2. FIXED VIDEO LAYER ================= */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-black flex items-center justify-end">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover md:h-screen md:w-auto md:left-auto md:right-0 md:object-contain"
-      >
-
-          <source src="/videos/hero2.mp4" type="video/mp4" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover md:h-screen md:w-auto md:left-auto md:right-0 md:object-contain"
+        >
+          <source src={`${import.meta.env.BASE_URL}video/hero2.mp4`} type="video/mp4" />
         </video>
 
         {/* Seamless Soft Left Edge Blend */}
@@ -177,14 +176,14 @@ export const HeroSection: React.FC = () => {
                   I BUILD
                 </span>
 
-                {/* Line 2: AI SYSTEMS */}
+                {/* Line 2: DIGITAL */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                  AI SYSTEMS
+                  INTELLIGENT
                 </span>
 
-                {/* Line 3: THAT SCALE */}
+                {/* Line 3: EXPERIENCES */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  THAT SCALE.
+                  AI SYSTEMS.
                 </span>
               </h1>
             </motion.div>
@@ -206,9 +205,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                I build practical AI systems across NLP, LLM applications, RAG, and predictive machine learning.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                From data and model development to deployment, I turn complex problems into usable, measurable solutions.
               </p>
             </motion.div>
 
@@ -268,8 +267,8 @@ export const HeroSection: React.FC = () => {
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
-              <p>IMPACT IS MY GOAL.</p>
+              <p>AI IS MY CRAFT.</p>
+              <p>INTELLIGENCE IS MY TOOL.</p>
             </div>
 
             {/* 3. Gold Accent Line */}
