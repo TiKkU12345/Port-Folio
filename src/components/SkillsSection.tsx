@@ -4,35 +4,39 @@ import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'FRONTEND ARCHITECTURE',
+    title: 'RAG & LLM SYSTEMS',
     badge: 'CORE PILLAR',
-    items: ['React.js', 'React Native', 'Tailwind CSS', 'Electron.js'],
-    description: 'Specialized in building high-performance client applications, custom component libraries, and immersive desktop/mobile interfaces.',
-    stat: '100% RESPONSIVE',
+    items: ['FAISS', 'SENTENCE TRANSFORMERS', 'LANGCHAIN', 'GROQ LLAMA-3.3-70B'],
+    description:
+      'Built retrieval-augmented pipelines combining vector search with LLM generation — semantic search, prompt engineering, and multi-agent document workflows.',
+    stat: 'SUB-1S RESPONSE',
     colSpan: 'lg:col-span-7',
   },
   {
-    title: 'DISTRIBUTED BACKEND',
-    badge: 'HIGH CONCURRENCY',
-    items: ['Node.js', 'Express.js', 'Spring Boot', 'Docker', 'Redis'],
-    description: 'Engineered RESTful APIs, JWT role-based access control, caching layers, and multi-tenant SaaS backend isolation.',
-    stat: '< 40ms LATENCY',
+    title: 'MACHINE LEARNING',
+    badge: 'APPLIED ML',
+    items: ['XGBOOST', 'PYTORCH', 'SCIKIT-LEARN', 'MLFLOW'],
+    description:
+      'Trained and evaluated classification, regression, and deep learning models across risk assessment, emotion recognition, and satisfaction prediction tasks — with experiment tracking for reproducibility.',
+    stat: 'CLASSIFICATION + REGRESSION',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'DATA PLATFORMS',
-    badge: 'PERSISTENCE',
-    items: ['MongoDB Atlas', 'PostgreSQL', 'MySQL'],
-    description: 'Designing resilient relational and document schemas with optimized indexing and transaction isolation.',
-    stat: 'ACID & NOSQL',
+    title: 'BACKEND ENGINEERING',
+    badge: 'BACKEND & APIS',
+    items: ['FASTAPI', 'PYTHON', 'SUPABASE', 'POSTGRESQL'],
+    description:
+      'Engineered API backends and data pipelines for ML-serving applications, with attention to auth, persistence, and clean data schemas.',
+    stat: 'RESTFUL',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'ALGORITHMS & MACHINE LEARNING',
-    badge: 'INTELLIGENCE',
-    items: ['C++', 'Python', 'Java', 'scikit-learn', 'OpenAI API'],
-    description: '1200+ algorithm problems solved. Applied Random Forest classifiers for real-time risk heatmaps and NLP policy analyzers.',
-    stat: '1200+ SOLVED',
+    title: 'DEPLOYMENT & TOOLING',
+    badge: 'DEPLOYMENT',
+    items: ['STREAMLIT', 'DOCKER', 'GIT', 'RAILWAY'],
+    description:
+      'Shipped interactive ML apps and deployed backends to production environments, with version control and CI workflows.',
+    stat: 'LIVE PROJECTS',
     colSpan: 'lg:col-span-7',
   },
 ];
