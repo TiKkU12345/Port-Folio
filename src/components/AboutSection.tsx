@@ -142,18 +142,6 @@ export const AboutSection: React.FC = () => {
               variants={fadeUpVariants}
               className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 pb-2 border-t border-[#8C6D4F]/25"
             >
-              /* {/* Stat 1 */}
-              <div className="flex flex-col">
-                <span 
-                  className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
-                  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
-                >
-                  1200+
-                </span>
-                <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  DSA Solved
-                </span>
-              </div> */
 
               {/* Stat 1 */}
               <div className="flex flex-col">
