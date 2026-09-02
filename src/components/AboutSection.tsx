@@ -134,7 +134,7 @@ export const AboutSection: React.FC = () => {
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              I'm <span className="text-[#F3DBB3] font-medium">Damisetti Shamya Lohitha</span>, a Full Stack Developer and Data Science student specializing in building scalable web architectures, AI-integrated platforms, and refined digital experiences. With a strong algorithmic foundation and a focus on clean engineering, I turn complex requirements into impactful products.
+              I'm <span className="text-[#F3DBB3] font-medium">Arunav Kumar</span>, an AI/ML Engineer and recent BCA graduate specializing in building deployed NLP and RAG systems, ML-driven risk platforms, and LLM-integrated applications. With a strong foundation in Python, FastAPI, and applied machine learning, I turn real-world data problems into working, production-ready systems.
             </motion.p>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
