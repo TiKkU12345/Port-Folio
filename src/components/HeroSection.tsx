@@ -234,7 +234,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Download Resume Button */}
               <motion.a
-                href="/resume.pdf"
+                href="Arunav-AIML.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
