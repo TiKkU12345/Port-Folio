@@ -6,10 +6,38 @@ export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('https://formspree.io/f/xrpbllze', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }),
+    });
+
+    if (response.ok) {
+      setSent(true);
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } else {
+      alert('Failed to send message. Please try again.');
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Something went wrong. Please try again.');
+  }
+};
 
   return (
     <footer
